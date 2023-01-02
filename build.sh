@@ -11,8 +11,8 @@ mkdir -p "${SOURCEDIR}"
 cd "${SOURCEDIR}"
 
 # Sync Source
-repo init -u https://github.com/Project-Awaken/android_manifest -b triton
-repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) --depth=1
+repo init -u https://github.com/Project-Awaken/android_manifest -b triton --depth=1
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 
 # Sync Trees
 git clone  https://github.com/takumi021/device_realme_r5x device/realme/r5x -b 13
