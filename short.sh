@@ -8,4 +8,4 @@ make bacon -j$(nproc --all)
 # Upload
 cd out/target/product/r5x
 curl -sL https://git.io/file-transfer | sh
-./transfer wet Awaken*.zip
+./transfer wet awaken*.zip
