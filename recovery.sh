@@ -17,7 +17,7 @@ repo sync
 git clone https://github.com/takumi021/android_device_realme_r5x-twrp device/realme/r5x
 
 # build
-. b*/e* && lunch twrp_r5x-eng && make recoveryimage
+. b*/e* && lunch twrp_r5x-userdebug && make recoveryimage
 
 # upload
 cd out/target/product/r5x
