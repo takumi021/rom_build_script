@@ -10,6 +10,12 @@ df -h
 mkdir -p "${SOURCEDIR}"
 cd "${SOURCEDIR}"
 
+# Repo
+mkdir -p ~/.bin
+PATH="${HOME}/.bin:${PATH}"
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+chmod a+rx ~/.bin/repo
+
 # Sync Source
 repo init -u https://github.com/Project-Awaken/android_manifest -b triton --depth=1
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
