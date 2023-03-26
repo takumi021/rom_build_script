@@ -3,6 +3,10 @@ cd twrp
 git config --global user.email "omrameshpatel@gmail.com" && git config --global user.name "takumi021"
 
 # repo
+mkdir -p ~/.bin
+PATH="${HOME}/.bin:${PATH}"
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+chmod a+rx ~/.bin/repo
 
 # python
 sudo apt-get install python-is-python3
