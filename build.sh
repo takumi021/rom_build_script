@@ -23,7 +23,7 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 # Sync Trees
 git clone  https://github.com/realme-sm6125-devs/device_realme_r5x device/realme/r5x -b 13
 git clone  https://github.com/realme-sm6125-devs/vendor_realme_r5x vendor/realme/r5x -b thirteen
-git clone  https://github.com/mcdofrenchfreis/biofrost-kernel-realme-trinket -b inline kernel/realme/r5x
+git clone  https://github.com/mcdofrenchfreis/biofrost-kernel-realme-trinket -b inline/dynamic kernel/realme/r5x
 
 # Source Patches
 cd frameworks/base
